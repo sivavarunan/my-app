@@ -1,5 +1,5 @@
 import Form from "next/form";
-import SearchFormReset from "@/app/components/SearchFormReset";
+import SearchFormReset from "@/components/SearchFormReset";
 import {Search} from "lucide-react";
 
 const SearchForm = ({ query }: { query?: string }) => {
