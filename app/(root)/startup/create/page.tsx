@@ -13,7 +13,7 @@ const Page = async () => {
         <h1 className="heading">Submit Your Startup</h1>
       </section>
 
-      {/* <StartupForm /> */}
+      <StartupForm />
     </>
   );
 };
