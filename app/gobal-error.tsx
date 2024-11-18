@@ -1,5 +1,5 @@
 "use client"
-export default function GlobalError({error,}:{error:Error & {digest?: string};}){
+export default function GlobalError({}:{error:Error & {digest?: string};}){
     return(
         <html>
             <body>
