@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth, signOut, signIn } from "../app/auth";
-import { BadgePlus, LogOut, Github, Rss } from "lucide-react";
+import { BadgePlus, LogOut, Rss } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import  GoogleIcon from '@mui/icons-material/Google';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 const Navbar = async () => {
   const session = await auth();
@@ -61,7 +64,7 @@ const Navbar = async () => {
                 }}
               >
                 <button type="submit" className="flex items-center gap-2">
-                  <Rss className="h-6 w-6 sm:hidden text-blue-500" />
+                  <GoogleIcon className="h-6 w-6 sm:hidden text-blue-500" />
                   <span className="hidden sm:block">Login with Google</span>
                 </button>
               </form>
@@ -74,7 +77,7 @@ const Navbar = async () => {
                 }}
               >
                 <button type="submit" className="flex items-center gap-2">
-                  <Github className="h-6 w-6 sm:hidden text-gray-800" />
+                  <GitHubIcon className="h-6 w-6 sm:hidden text-gray-800" />
                   <span className="hidden sm:block">Login with GitHub</span>
                 </button>
               </form>
