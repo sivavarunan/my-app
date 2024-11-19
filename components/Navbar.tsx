@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth, signOut, signIn } from "../app/auth";
-import { BadgePlus, LogOut, Rss } from "lucide-react";
+import { LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import  GoogleIcon from '@mui/icons-material/Google';
+import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import CreateIcon from '@mui/icons-material/Create';
 
 
 const Navbar = async () => {
@@ -25,7 +26,7 @@ const Navbar = async () => {
               {/* Create Button */}
               <Link href="/startup/create">
                 <span className="hidden sm:block">Create</span>
-                <BadgePlus className="h-6 w-6 sm:hidden" />
+                <CreateIcon className="h-6 w-6 sm:hidden" />
               </Link>
 
               {/* Logout Button */}
