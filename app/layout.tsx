@@ -54,8 +54,8 @@ const workSans = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "HYC Directory",
-  description: "Pitch, Vote and Grow",
+  title: "Wanderer",
+  description: "Blog-website",
 }
 
 export default function RootLayout({
