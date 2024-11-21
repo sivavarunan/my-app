@@ -1,12 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth, signOut, signIn } from "../app/auth";
-import { LogOut } from "lucide-react";
+import { LogOut, DiamondPlus } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import CreateIcon from '@mui/icons-material/Create';
-
 
 const Navbar = async () => {
   const session = await auth();
@@ -26,7 +24,7 @@ const Navbar = async () => {
               {/* Create Button */}
               <Link href="/startup/create">
                 <span className="hidden sm:block">Create</span>
-                <CreateIcon className="h-6 w-6 sm:hidden" />
+                <DiamondPlus className="h-6 w-6 sm:hidden  text-blue-700" />
               </Link>
 
               {/* Logout Button */}
