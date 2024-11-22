@@ -24,7 +24,8 @@ const Navbar = async () => {
               {/* Create Button */}
               <Link href="/startup/create">
                 <span className="hidden sm:block">Create</span>
-                <DiamondPlus className="h-6 w-6 sm:hidden  text-blue-700" />
+                <DiamondPlus className="h-6 w-6 sm:hidden  text-blue-7
+                00" />
               </Link>
 
               {/* Logout Button */}

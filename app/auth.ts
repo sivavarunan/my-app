@@ -24,7 +24,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         bio = profile?.bio || "";
       } else if (account.provider === "google") {
         id = profile?.sub; // Google uses `sub` as the unique user ID
-        login = profile?.email?.split("@")[0]; // Use the email's prefix as a username
+        login = profile?.name; // The user's full name from Google
         bio = profile?.email_verified ? "Verified Google user" : "Unverified Google user";
       }
 
