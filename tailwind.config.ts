@@ -43,6 +43,15 @@ const config: Config = {
         200: "2px 2px 0px 2px rgb(0, 0, 0)",
         300: "2px 2px 0px 2px rgb(14, 122, 230)",
       },
+      animation: {
+        "loading-bar": "loading-bar 1.5s ease-in-out infinite",
+      },
+      keyframes: {
+        "loading-bar": {
+          "0%, 100%": { transform: "translateX(-100%)" },
+          "50%": { transform: "translateX(0)" },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
